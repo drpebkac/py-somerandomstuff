@@ -1,4 +1,3 @@
-# Kumo's original code
 import random
 
 # Personal preference. I always like to have functions declared globally before entering the loop. Its more organised
