@@ -53,4 +53,4 @@ while True:
 
   #If the input is not r or exit. Throw a tandrum and repeat loop
   else:
-    print('I will listen if you enter "r"')
+    print('I will listen if you enter "r"' + '\n\n')
