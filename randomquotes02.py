@@ -24,25 +24,27 @@ def getAnswer(answerNumber):
 #Your program starts here
 # An infinate loop
 while True:
+  
+  #I'm going to change the variable r to something more meaningful and less confusing. Lets say.... choices
+  #Here is another variable that generates a number from 1 to 9
+  choices = random.randint(1,9)
 
   #Message. Instructions to show up on screen
-  print('Press r for an answer.')
+  print('Press "r" for an answer.')
   
   #Player enters an answer. The answer is then stored in the userMove variable
   userMove = input()
 
-  #I'm going to change the variable r to something more meaningful and less confusing. Lets say.... choices
-  #Here is another variable that generates a number from 1 to 9
-  choices = random.randint(1,9)
+
 
   #Conditions, this is the part where you tell the program what to do
   
   #If userMove equals r, run the function getAnswer
   if userMove == 'r':
     #Run the function getAnswer as 'fortune' and pass a random number generated from the choices variable then call the getAnswer function from above
+    #The word fortune can be anything. It just saves you from typing something like print(getAnswer(choices) + '\n\n')
     fortune = getAnswer(choices)
     #Print out the answer from the getAnswer
-    #The word fortune can be anything. It just saves you from typing something like print( + '\n\n')
     print(fortune + '\n\n')
 
   #If userMove equals exit, leave the loop and exit program
