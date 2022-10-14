@@ -39,7 +39,7 @@ while True:
   
   #If userMove equals r, run the function getAnswer
   if userMove == 'r':
-    #Run the function getAnswer as 'fortune' and pass a random number generated from the choices variable
+    #Run the function getAnswer as 'fortune' and pass a random number generated from the choices variable then call the getAnswer function from above
     fortune = getAnswer(choices)
     #Print out the answer from the getAnswer
     #The word fortune can be anything. It just saves you from typing something like print( + '\n\n')
